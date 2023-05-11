@@ -17,10 +17,10 @@ jobs:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@v0.1.10
       with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
+        host: 103.147.154.187
+        username: adhtanju
+        password: Jv8d2(L#S7zo9B
+        port: 64000
         script: |
           source /home/adhtanju/nodevenv/projects/me/18/bin/activate && cd /home/adhtanju/projects/me
           git pull
