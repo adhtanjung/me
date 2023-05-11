@@ -22,7 +22,8 @@ jobs:
         password: Jv8d2(L#S7zo9B
         port: 64000
         script: |
-          npm install -g pnpm
+          export NVM_DIR=~/.nvm
+          source ~/.nvm/nvm.sh
           source /home/adhtanju/nodevenv/projects/me/18/bin/activate && cd /home/adhtanju/projects/me
           git pull
           pnpm install
