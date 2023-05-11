@@ -14,9 +14,6 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - uses: pnpm/action-setup@v2
-      with:
-          version: 6.0.2
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@v0.1.10
       with:
@@ -25,6 +22,7 @@ jobs:
         password: Jv8d2(L#S7zo9B
         port: 64000
         script: |
+          npm install -g pnpm
           source /home/adhtanju/nodevenv/projects/me/18/bin/activate && cd /home/adhtanju/projects/me
           git pull
           pnpm install
